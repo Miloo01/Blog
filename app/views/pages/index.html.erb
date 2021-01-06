@@ -1,0 +1,14 @@
+<h2>Lista de artículos </h2>
+
+<%= link_to "Dashboard", posts_dashboard_path %>
+
+<% @posts.each do |post| %>
+<ol>
+    <li><%= post.title %></li>
+    <li><%= post.created_at %></li>
+    <li><%= image_path post.image_url %></li>
+    <img src="<%=post.image_url%>">
+    <li><%= post.content %></li>
+</ol>
+
+<% end %>
