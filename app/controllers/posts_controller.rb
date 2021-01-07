@@ -7,7 +7,8 @@ class PostsController < ApplicationController
   end
   
 
-  def dashboard 
+  def dashboard
+     
   end
 
   def create
